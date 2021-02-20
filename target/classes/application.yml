@@ -1,0 +1,8 @@
+service:
+  kafka:
+    server: ${KAFKA_SERVER:localhost:9092}
+    inputTopic: ${INPUT_TOPIC:ksql_stream_join_input}
+    outputTopic: ${OUTPUT_TOPIC:ksql_join_results}
+  appName: ${APPLICATION_NAME:stream-join-service}
+server:
+  port: 8081
